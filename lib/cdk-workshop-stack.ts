@@ -14,7 +14,7 @@ export class CdkWorkshopStack extends Stack {
   
      // defines an AWS Lambda resource
      const hello = new lambda.Function(this, 'HelloHandler', {
-      runtime: lambda.Runtime.NODEJS_14_X,    // execution environment probando
+      runtime: lambda.Runtime.NODEJS_14_X,    // execution environment
       code: lambda.Code.fromAsset('lambda'),  // code loaded from "lambda" directory
       handler: 'hello.handler'                // file is "hello", function is "handler"
     });
